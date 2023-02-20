@@ -3,8 +3,9 @@
 #include <time.h>
 
 int main() {
+    int n;
     srand(time(NULL));
-    int n = rand() % RAND_MAX - RAND_MAX / 2;
+    n = rand() % RAND_MAX - RAND_MAX / 2;
     printf("%d ", n);
 
     if (n > 0) {
@@ -14,5 +15,6 @@ int main() {
     } else {
         printf("is negative\n");
     }
+
     return 0;
 }
