@@ -1,24 +1,20 @@
 #include "main.h"
 
 /**
- * main - A program that prints _putchar, followed by a new line.
+ * _isupper - checks if c is an uppercase character
+ * @c: the character to carry check on
  *
- * Return: 0
+ * Return: 1 if c is uppercase, otherwise 0
  */
 
-int main(void)
+int _isupper(int c)
 {
-	char word[] = "_putchar";
-	unsigned long int i;
+	int value;
 
-	i = 0;
+	if (c >= 65 && c <= 90)
+		value = 1;
+	else
+		value = 0;
 
-	while (i < sizeof(word) - 1)
-	{
-		_putchar(word[i]);
-		i++;
-	}
-	_putchar('\n');
-
-	return (0);
+	return (value);
 }
